@@ -6,6 +6,11 @@ import Header from "../component/header/Header";
 import PortfolioTab from "../elements/tab/PortfolioTab";
 import ServiceList from "../elements/service/ServiceList";
 import Contact from "../elements/contact/ContactTwo";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin , faFacebook} from '@fortawesome/free-brands-svg-icons'
+
+
+
 
 
 const SlideList = [
@@ -63,6 +68,12 @@ class DesignerPortfolio extends Component {
                                             </TextLoop>{" "}
                                             </h1>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
+                                            <div className="mt-5">
+                                                <a className="mr-3" href="https://github.com/lanceljr" target="_blank"> <FontAwesomeIcon icon={faGithub} size="3x" style={{color:"#6e5494"}}/> </a>
+                                                <a className="mr-3" href="https://www.linkedin.com/in/lanceljr/" target="_blank"> <FontAwesomeIcon icon={faLinkedin}  size="3x" style={{color:"#0077B5"}}/></a>
+                                                <a className="mr-3" href="https://www.facebook.com/lanceljr" target="_blank"> <FontAwesomeIcon icon={faFacebook}  size="3x" style={{color:"#4267B2"}}/></a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -71,6 +82,52 @@ class DesignerPortfolio extends Component {
                     ))}
                     {/* End Single Slide */}
                 </div>
+
+
+                {/* Start Skills Area  */}
+                <div className="container pt-5 pb-5 skills-container">
+                    <div className="row">
+                            <div className="col-lg-4 text-center">
+                                <h1 id="myskills" className="mt-5"> My <span style={{color:"#0460d9"}}> Skills </span></h1>
+                            </div>
+
+                            <div className="col-lg-8">
+                                <div className="row d-flex justify-content-center">
+                                    <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/color/100/000000/javascript--v1.png"/>                       
+                                    </div>
+                                    <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/color/90/000000/react-native.png"/>                          
+                                    </div>
+                                    <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/color/100/000000/mongodb.png"/>                           
+                                    </div>
+                                </div>
+
+                                <div className="row d-flex justify-content-center">
+                                <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/color/100/000000/mysql-logo.png"/>                       
+                                    </div>
+                                    <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/color/100/000000/vue-js.png"/>                          
+                                    </div>
+                                    <div className="col-4 col-md-2">
+                                        <img src="https://img.icons8.com/dusk/100/000000/php-logo.png"/>                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                {/* End Skills Area  */}
+                
 
 
                 {/* Start Service Area  */}
@@ -104,7 +161,7 @@ class DesignerPortfolio extends Component {
                                 <div className="section-title text-center mb--60">
                                     <span className="subtitle">My Recent Work.</span>
                                     <h2 className="title">Projects</h2>
-                                    <p className="description">There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration.</p>
+                                    <p className="description">Stay tuned to find out more about the exciting projects that I'm working on!</p>
                                 </div>
                             </div>
                         </div>

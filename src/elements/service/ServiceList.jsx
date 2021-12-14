@@ -1,5 +1,5 @@
 import React ,{ Component }from "react";
-import { FiChrome , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiChrome , FiLayers , FiUsers } from "react-icons/fi";
 
 const ServiceList = [
     {
